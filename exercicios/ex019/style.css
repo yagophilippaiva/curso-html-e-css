@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+em html id = # em css
+em html class = . em css
+*/
+body{
+    background-color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    color: green;
+
+}
+h2{
+    color: rgb(51, 218, 51);
+}
+h1#principal{
+    text-align: center;
+}
+.basico{
+    color: yellow;
+}
+.intermediario{
+    color:rgb(30, 146, 30)
+}
+.avançado{
+    color: red;
+}
+.destaque{
+    background-color: white;
+}
