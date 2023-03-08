@@ -10,6 +10,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 html, body{
     background-color: darkgray;
@@ -21,7 +22,7 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 header > h1{
     padding-top: 50px;
@@ -55,6 +56,7 @@ section.normal{
     color: black;
 }
 section.imagem{
+    display: inline-block;
     background-color: black;
     color: white;
     background-attachment: fixed;
