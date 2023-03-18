@@ -61,7 +61,64 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor">
+
+        </p>
+        <p>
+            <label for="inivel">nivel de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
+        </p>
+        <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <label for="iest">Estado</label>
+            <select name="est" id="iest">
+                <optgroup label="região sudeste">
+                    <option value="Sp">São Paulo</option>
+                    <option value="Rj">Rio de Janeiro</option>
+                </optgroup>
+                <optgroup label="Norte">
+                    <option value="Ma">Maranhão</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administração</option>
+                <option>Contabilidade</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10">
+                mensagem
+            </textarea>
+        </p>
+        <p><input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">+<input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" ></p>
+        <p>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="range" name="num" id="inum" min="1" max="10" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+        <p>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcidade()">
+            <output id="iidade">0</output>
+        </p>
     </form>
+    <script>
+        function calcidade(){
+            let atual= new Date().getFullYear()
+            iidade.innerHTML = Number(atual)-Number(iano.value)
+        }
+    </script>
     <!-- estudar mais sobre Redex-->
 </body>
 </html>
